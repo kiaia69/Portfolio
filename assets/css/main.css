@@ -4382,13 +4382,13 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.25);
 		cursor: default;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 0.8rem;
+		font-size: 1.8rem;
 		font-weight: 900;
 		letter-spacing: 0.075em;
 		line-height: 1.5;
 		text-align: center;
 		text-transform: uppercase;
-		margin: 4rem auto 8rem auto;
+		margin: 1rem auto 5rem auto;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
@@ -4681,3 +4681,31 @@ input, select, textarea {
 		}
 
 	}
+
+	#tech-stack {
+		width: 100%;
+		overflow: hidden;
+		color: white;
+		font-size: 1.7em;
+		text-align: center;
+		white-space: nowrap;
+		bottom: 0;
+		left: 0;
+	}
+	
+	.scrolling-text {
+		display: inline-flex;
+		white-space: nowrap;
+		gap: 10px;
+		animation: scroll 30s linear infinite;
+	}
+	
+	@keyframes scroll {
+		from {
+			transform: translateX(100%);
+		}
+		to {
+			transform: translateX(-100%);
+		}
+	}
+	
